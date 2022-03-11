@@ -9,7 +9,7 @@
       <IcTa>25</IcTa>
       <LastSavedFilesCultureInfo>en-US</LastSavedFilesCultureInfo>
       <SolutionAreamm2>194</SolutionAreamm2>
-      <SolutionComponentCount>11</SolutionComponentCount>
+      <SolutionComponentCount>10</SolutionComponentCount>
       <SolutionMaxHeightmm>10</SolutionMaxHeightmm>
     </ConverterSpec>
   </ConverterSpecs>
@@ -36,7 +36,7 @@
       <MaxVin>15</MaxVin>
       <NomVin>12</NomVin>
       <MinVin>9</MinVin>
-      <SwitchingFreq>404000</SwitchingFreq>
+      <SwitchingFreq>400000</SwitchingFreq>
       <OutputVol>4.98</OutputVol>
       <OutputCur>6</OutputCur>
       <NPh>1</NPh>
@@ -56,7 +56,7 @@
       <InductorIheat>43.5</InductorIheat>
       <InductorTheat>40</InductorTheat>
       <Cin>4.7E-05</Cin>
-      <CinESR>0.029</CinESR>
+      <CinESR>0.5</CinESR>
       <NCin>1</NCin>
       <CinManufacturer>KEMET</CinManufacturer>
       <CinPartNumber>A767KN476M1HLAE029</CinPartNumber>
@@ -74,12 +74,12 @@
       <BulkCapacitorManufacturer>Kemet</BulkCapacitorManufacturer>
       <CobAtNoVoltage>0.00022</CobAtNoVoltage>
       <VoRipplePkPkMaxTargetPercent>1</VoRipplePkPkMaxTargetPercent>
-      <VoStepMaxTargetPercent>2.81870822953909</VoStepMaxTargetPercent>
+      <VoStepMaxTargetPercent>2.75666664137514</VoStepMaxTargetPercent>
       <TotalVoRippleMaxTargetPercent>3</TotalVoRippleMaxTargetPercent>
       <Coc>3E-05</Coc>
       <ESRc>0.001</ESRc>
       <ESLc>2E-10</ESLc>
-      <Numc>4</Numc>
+      <Numc>3</Numc>
       <CeramicCapacitorManufacturer>Murata</CeramicCapacitorManufacturer>
       <CeramicCapacitorPartNumber>GRM32EC81C476KE15L</CeramicCapacitorPartNumber>
       <CocAtNoVoltage>4.7E-05</CocAtNoVoltage>
@@ -98,8 +98,8 @@
       <HotSwapCurrentLimitThresholdFoldbackFactor>1</HotSwapCurrentLimitThresholdFoldbackFactor>
       <Rsense>0.012</Rsense>
       <CurrentSensingConfigurationType>1</CurrentSensingConfigurationType>
-      <SwitchingFreqDesired>404000</SwitchingFreqDesired>
-      <Rfreq>105000</Rfreq>
+      <SwitchingFreqDesired>400000</SwitchingFreqDesired>
+      <Rfreq>107000</Rfreq>
       <Vbias>5</Vbias>
       <HasExtvcc>True</HasExtvcc>
       <LoadStepLow>3</LoadStepLow>
@@ -116,8 +116,8 @@
       <VOV_NonLatch_Desired>9</VOV_NonLatch_Desired>
       <RailNumber>1</RailNumber>
       <BW>22.39</BW>
-      <PM>79.31</PM>
-      <DeltaVoLoadStep>60.9908485218291</DeltaVoLoadStep>
+      <PM>82.15</PM>
+      <DeltaVoLoadStep>66.8041370782095</DeltaVoLoadStep>
       <FootprintClearanceFactor>1.5</FootprintClearanceFactor>
       <Mode>Buck</Mode>
       <ModeChanged>False</ModeChanged>
@@ -135,8 +135,8 @@
       <NumFetsSyncStage1>1</NumFetsSyncStage1>
       <NumFetsControlStage2>1</NumFetsControlStage2>
       <NumFetsSyncStage2>1</NumFetsSyncStage2>
-      <Efficiency>0.9761</Efficiency>
-      <VoutRipplePercent>0.0022658733</VoutRipplePercent>
+      <Efficiency>0.9764</Efficiency>
+      <VoutRipplePercent>0.0030603436</VoutRipplePercent>
       <LossCurveA2>0.0101771719</LossCurveA2>
       <LossCurveA1>0.0365640348</LossCurveA1>
       <LossCurveA0>0.1456555546</LossCurveA0>
