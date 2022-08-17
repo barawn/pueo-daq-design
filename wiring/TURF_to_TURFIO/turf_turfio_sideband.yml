@@ -1,0 +1,30 @@
+# TURF/TURFIO wiring, Sidebands
+
+# See SD-74546-800 drawing. Sidebands do not cross.
+connectors:
+  TURF:
+    pins: [ A14, A15, A16, A17, A18, A19, A20, A21, B14, B15, B16, B17, B18, B19, B20, B21]
+    pinlabels: [ CALx_P, CALx_N, GND, "No connect", "No connect", GND, TRXx, TTXx, "No connect", "No connect", "No connect", "No connect", "No connect", "No connect", "T#CTRLx", TGPIO1x ]
+    show_pincount: false
+    hide_disconnected_pins: false
+  TFIO:
+    pins: [ A14, A15, A16, A17, A18, A19, A20, A21, B14, B15, B16, B17, B18, B19, B20, B21]
+    pinlabels: [ CAL_P, CAL_N, GND, "No connect", "No connect", GND, TTX, TRX, "No connect", "No connect", "No connect", "No connect", "No connect", "No connect", "T#CTRL", TGPIO1 ]
+    show_pincount: false
+    hide_disconnected_pins: false
+
+cables:
+  W1:
+    wirecount: 8
+    show_name: false
+    show_wirecount: false
+    image:
+      src: s-l500.jpg
+      height: 70
+      caption: Molex 74546-08xx
+
+connections:
+  -
+    - TURF: [ A14, A15, A16, A19, A20, A21, B20, B21 ]
+    - W1: [1-8]
+    - TFIO: [ A14, A15, A16, A19, A20, A21, B20, B21 ]

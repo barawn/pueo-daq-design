@@ -1,0 +1,31 @@
+# TURF/TURFIO wiring, Gigabit Transceiver + Clocking
+
+# show_pincount/hide_disconnected_pins deals with
+# the fact these are non-numeric connections
+connectors:
+  TURF:
+    pins: [ A2, A3, B2, B3, A5, A6, B5, B6 ]
+    pinlabels: [ MGTRXx_P, MGTRXx_N, MGTTXx_P, MGTTXx_N, "No connect", "No connect", CLKx_P, CLKx_N ]
+    show_pincount: false
+    hide_disconnected_pins: true
+  TFIO:
+    pins: [ A2, A3, B2, B3, A5, A6, B5, B6 ]
+    pinlabels: [ MGTRX_P, MGTRX_N, MGTTX_P, MGTTX_N, CLK_P, CLK_N, MGTCLK_P, MGTCLK_N ]
+    show_pincount: false
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 8
+    show_name: false
+    show_wirecount: false
+    image:
+      src: s-l500.jpg
+      height: 70
+      caption: Molex 74546-08xx
+
+connections:
+  -
+    - TURF: [ A2, A3, B2, B3, A5, A6, B5, B6 ]
+    - W1: [1-8]
+    - TFIO: [ B2, B3, A2, A3, B5, B6, A5, A6 ]

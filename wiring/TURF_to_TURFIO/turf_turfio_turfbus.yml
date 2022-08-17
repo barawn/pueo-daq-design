@@ -1,0 +1,52 @@
+# TURF/TURFIO wiring, TURFbus wiring
+
+# show_pincount/hide_disconnected_pins deals with
+# the fact these are non-numeric connections
+connectors:
+  TURF:
+    pins: [ A8, A9, B8, B9, A11, A12, B11, B12, A23, A24, B23, B24, A26, A27, B26, B27, A29, A30, B29, B30, A32, A33, B32, B33 ]
+    pinlabels: [ TXCLKx_P, TXCLKx_N, RXCLKx_P, RXCLKx_N, COUTx_P, COUTx_N, CINTIOx_P, CINTIOx_N, CIN0x_P, CIN0x_N, CIN1x_P, CIN1x_N, CIN2x_P, CIN2x_N, CIN3x_P, CIN3x_N, CIN4x_P, CIN4x_N, CIN5x_P, CIN5x_N, CIN6x_P, CIN6x_N, SPARE_P, SPARE_N ]
+    show_pincount: false
+    hide_disconnected_pins: true
+  TFIO:
+    pins: [ A8, A9, B8, B9, A11, A12, B11, B12, A23, A24, B23, B24, A26, A27, B26, B27, A29, A30, B29, B30, A32, A33, B32, B33 ]
+    pinlabels: [ TXCLK_P, TXCLK_N, RXCLK_P, RXCLK_N, COUTTIO_P, COUTTIO_N, CIN_P, CIN_N, TCOUT1_P, TCOUT1_N, TCOUT0_P, TCOUT0_N, TCOUT3_P, TCOUT3_N, TCOUT2_P, TCOUT2_N, TCOUT5_P, TCOUT5_N, TCOUT4_P, TCOUT4_N, SPARE_P, SPARE_N, TCOUT6_P, TCOUT6_N ]
+    show_pincount: false
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 24
+    show_name: false
+    show_wirecount: false
+    show_wirenumbers: false
+    image:
+      src: s-l500.jpg
+      height: 70
+      caption: Molex 74546-08xx
+
+connections:
+  -
+    - TURF: [ A8, A9, B8, B9 ]
+    - W1: [1-4]
+    - TFIO: [ B8, B9, A8, A9 ]
+  -
+    - TURF: [ A11, A12, B11, B12 ]
+    - W1: [5-8]
+    - TFIO: [ B11, B12, A11, A12 ]    
+  -
+    - TURF: [ A23, A24, B23, B24 ]
+    - W1: [9-12]
+    - TFIO: [ B23, B24, A23, A24 ]
+  -
+    - TURF: [ A26, A27, B26, B27 ]
+    - W1: [13-16]
+    - TFIO: [ B26, B27, A26, A27 ]
+  -
+    - TURF: [ A29, A30, B29, B30 ]
+    - W1: [17-20]
+    - TFIO: [ B29, B30, A29, A30 ]
+  -
+    - TURF: [ A32, A33, B32, B33 ]
+    - W1: [ 21-24 ]
+    - TFIO: [ B32, B33, A32, A33 ]
