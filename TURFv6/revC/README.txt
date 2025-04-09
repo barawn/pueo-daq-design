@@ -1,22 +1,20 @@
-This design is intended to follow the Bitelle 8-layer stackup from here:
+This design is intended to follow
 
-https://www.7pcb.com/Upload_file/Multi-layer-stack-up.pdf
-
-layer 1
-2x1080 prepreg (5.9 mils/0.15 mm)
-layer 2
-core (9 mils/0.23 mm)
-layer 3
-2116+1080 prepreg (7.4 mils/0.188 mm)
-layer 4
-core (5.1 mils/0.13 mm)
-layer 5
-2116+1080 prepreg (7.4 mils/0.188 mm)
-layer 6
-core (9 mils/0.23 mm)
-layer 7
-2x1080 prepreg (5.9 mils/0.15 mm)
-layer 8
+0.036 	    L1
+0.1504 	    prepreg
+0.03	    L2
+0.25	    core
+0.03	    L3
+0.1884	    prepreg
+0.03	    L4
+0.13	    core
+0.03	    L5
+0.1902	    prepreg
+0.03	    L6
+0.25	    core
+0.03	    L7
+0.1504	    prepreg
+0.036	    L8
 
 Please contact allison.122@osu.edu if this stackup is no longer possible.
 
